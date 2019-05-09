@@ -1,0 +1,8 @@
+<app-loading *ngIf="loading"></app-loading>
+
+<div *ngIf="error" class="alert alert-danger mt-5" role="alert">
+  <h3>Error</h3>
+  <p>Error al intentar obtener la lista de artistas</p>
+</div>
+
+<app-tarjetas [items]="nuevasCanciones"></app-tarjetas>
